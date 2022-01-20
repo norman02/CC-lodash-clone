@@ -112,6 +112,20 @@ const _ = {
    */
   drop(array, n=1) {
     return array.slice(n)
+  },
+  /**
+   * Creates a slice of `array` excluding elments dropped from the beginning. 
+   * Elements are dropped until `predicate` returns falsey. The predicate is invoked
+   * with three arguments: (value, index, array)
+   * @param {Array} array 
+   * @param {Function} predicate 
+   * @returns Returns the slice of `array`
+   */
+  dropWhile(array, predicate=_.identity) {
+    let dropNumber = array.findIndex( (element, index) =>{
+      return !predicate(element, index)
+    })
+    return this.drop(array, dropNumber)
   }
 
 };
