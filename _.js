@@ -73,6 +73,22 @@ const _ = {
   has(object, key) {
     return object.hasOwnProperty(key)
   },
+  /**
+   * Creates an object composed of the inverted keys and values of `object`. 
+   * If `object` contains duplicate values, subsequent values overwrite 
+   * prperty assignments of previus values.
+   * @param {Object} object The object to invert 
+   * @returns {Object} Returns the new inverted object
+   */
+  invert(object) {
+      let invertedObject = {}
+      for (let key in object) {
+        let orignalValue = object[key]
+        invertedObject[orignalValue] = key
+        
+      }
+      return invertedObject
+  }
 
 };
 
