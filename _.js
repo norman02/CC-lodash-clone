@@ -88,6 +88,21 @@ const _ = {
         
       }
       return invertedObject
+  },
+  /**
+   * Returns the key of the first elment `predicate` returns truthy for.
+   * @param {Object} object 
+   * @param {Function} [predicate=_.identity] 
+   * @returns {*} Returns the key of the matched element, else `undefined`.
+   */
+  findKey(object, predicate=_.identity) {
+      for(let key in object) {
+          let value = object[key]
+          let predicateReturnValue = predicate(value)
+          if (predicateReturnValue) {
+              return key
+          }
+      }
   }
 
 };
