@@ -126,6 +126,21 @@ const _ = {
       return !predicate(element, index)
     })
     return this.drop(array, dropNumber)
+  },
+  /**
+   * Creates an array of elments split into group the length of `size`.
+   * If `array` can't be split evenlty, the final chunc will be the remaining elements.  
+   * @param {Array} array The array to process.
+   * @param {number} size The length of each chunk.
+   * @returns {Array} Returns the new array of chunks.
+   */
+  chunk(array, size=1) {
+    let chunks = []
+    for (let i = 0; i < array.length; i += size) {
+      let chunk = array.slice(i, i + size)
+      chunks.push(chunk)
+    }
+    return chunks
   }
 
 };
