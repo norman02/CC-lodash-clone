@@ -63,7 +63,16 @@ const _ = {
     let startPaddingLength = Math.floor((length - string.length)/2)
     let endPaddingLength = length - string.length - startPaddingLength
     return chars.repeat(startPaddingLength) + string + chars.repeat(endPaddingLength)
-  }
+  },
+  /**
+   * Checks if `path` is a direct property of `object`.
+   * @param {Object} object 
+   * @param {string} key //TODO: support path
+   * @returns {boolean} True if `path` is a direct property of `Object`, else false.
+   */
+  has(object, key) {
+    return object.hasOwnProperty(key)
+  },
 
 };
 
