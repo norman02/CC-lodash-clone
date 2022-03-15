@@ -4,7 +4,7 @@
   "description": "lodash clone",
   "main": "_.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha tests/*.js"
   },
   "repository": {
     "type": "git",
