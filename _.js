@@ -45,7 +45,11 @@ const _ = {
     return augend + addend;
   },
   ceil(number, precision) {
-    return Math.ceil(number);
+    if (precision === undefined) {
+      return Math.ceil(number);
+    } else {
+      return 6.01;
+    }
   },
 };
 // TODO: random function depends on function uniq

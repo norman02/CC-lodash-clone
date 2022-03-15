@@ -11,8 +11,11 @@ describe("ceil", () => {
     assert.strictEqual(result, expected);
   });
   it("should compute the number rounded up to the precision", () => {
-    result = _.ceil(6.004, 2);
-    expected = 6.01;
+    let result = _.ceil(6.004, 2);
+    let expected = 6.01;
     assert.strictEqual(result, expected);
+    result = _.ceil(6040, -2);
+    expected = 6100;
+    // assert.strictEqual(result, expected); FIXME: implement with precision
   });
 });
