@@ -3,7 +3,8 @@
  */
 const _ = {
   /**
-   * Clamps a `number` within the inclusive `lower` and `upper` bounds
+   * Clamps a `number` within the inclusive `lower` 
+   * and `upper` bounds
    * @name clamp
    * @param {number} number The `number` to clamp.
    * @param {number} lower The `lower` bound.
@@ -15,7 +16,10 @@ const _ = {
     return Math.min(Math.max(number, lower), upper);
   },
   /**
-   * Checks if `number` is between `start` and up to, but not including `end`. if `end` is not specifed, it is set to `start` with `start` then set to 0. if `start` is greater than end the params are swapped to support negative ranges.
+   * Checks if `number` is between `start` and up to, but not 
+   * including `end`. if `end` is not specifed, it is set to 
+   * `start` with `start` then set to 0. if `start` is greater 
+   * than end the params are swapped to support negative ranges.
    * @name inRange
    * @param {number} number
    * @param {number} start
@@ -30,5 +34,5 @@ const _ = {
     return number >= Math.min(start, end) && number < Math.max(start, end);
   },
 };
-
+// TODO: random function depends on function uniq
 module.exports = _;
