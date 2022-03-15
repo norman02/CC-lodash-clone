@@ -1,0 +1,19 @@
+{
+  "name": "cc-lodash-clone",
+  "version": "1.0.0",
+  "description": "lodash clone",
+  "main": "_.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norman02/CC-lodash-clone.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norman02/CC-lodash-clone/issues"
+  },
+  "homepage": "https://github.com/norman02/CC-lodash-clone#readme"
+}
