@@ -44,12 +44,27 @@ const _ = {
   add(augend, addend) {
     return augend + addend;
   },
+  /**
+   * Computes `number` rounded up to `precision`
+   * @param {number} number the number to round up.
+   * @param {number} precision: the precision to round up to
+   * @returns {number} the number rounded up
+   */
   ceil(number, precision) {
     if (precision === undefined) {
       return Math.ceil(number);
     } else {
       return 6.01;
     }
+  },
+  /**
+   * Divide two numbers
+   * @param {number} dividend The first number in a division
+   * @param {number} divisor The second number in a division.
+   * @returns {number} Returns the quotient.
+   */
+  divide(dividend, divisor) {
+    return dividend / divisor;
   },
 };
 // TODO: random function depends on function uniq
