@@ -56,6 +56,7 @@ const _ = {
     } else {
       return 6.01;
     }
+    // TODO: implement precision
   },
   /**
    * Divide two numbers
@@ -74,8 +75,22 @@ const _ = {
    */
   floor(number, precision) {
     return Math.floor(number);
-    //FIXME: implement precision
+    //TODO: implement precision
+  },
+  /**
+   * Computes the maximum value of `array`. If `array` is empty or falsey, `undefined` is returned.
+   * @param {array} array The array to iterate over.
+   * @returns Returns the maximum value.
+   */
+  max(array) {
+    let max = array[0];
+    array.forEach((e) => {
+      if (e > max) {
+        max = e;
+      }
+    });
+    return max;
   },
 };
-// TODO: random function depends on function uniq
+// TODO: random - implement random function
 module.exports = _;
