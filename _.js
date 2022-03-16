@@ -17,6 +17,14 @@ const _ = {
     }
     return res;
   },
+  /**
+   * Creates an array with all falsey values removed.
+   * @param {array} array The array to compact.
+   * @returns Returns the new array of filtered values
+   */
+  compact(array) {
+    return array.filter((e) => e);
+  },
 
   /** Math methods */
   /**
