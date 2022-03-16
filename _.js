@@ -128,6 +128,16 @@ const _ = {
     return multiplier * multiplicand;
   },
   //random TODO: implement random function
+  //round TODO: implement the round function.
+  /**
+   * Subtract two numbers
+   * @param {number} minuend The first number in a subtraction.
+   * @param {number} subtrahend The second number in a subtraction
+   * @returns Returns the difference
+   */
+  subtract(minuend, subtrahend) {
+    return minuend - subtrahend;
+  },
 };
 
 module.exports = _;
