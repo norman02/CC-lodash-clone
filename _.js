@@ -103,7 +103,49 @@ const _ = {
     }
     return array.reduce((a, b) => a + b) / array.length;
   },
+  /**
+   * Computes the minimum value of `array`. If `array` is empty or falsey, `undefined` is returned.
+   * @param {array} array The array to iterate over.
+   * @returns Returns the minimum value.
+   */
+  min(array) {
+    let min = array[0];
+    array.forEach((e) => {
+      if (e < min) {
+        min = e;
+      }
+    });
+    return min;
+  },
+  // minBy TODO: implement minBy function
+  /**
+   * Multiply two numbers.
+   * @param {number} multiplier The first number in a multiplication
+   * @param {number} multiplicand The second number in a multiplication.
+   * @returns Returns the product.
+   */
+  multiply(multiplier, multiplicand) {
+    return multiplier * multiplicand;
+  },
   //random TODO: implement random function
+  //round TODO: implement the round function.
+  /**
+   * Subtract two numbers
+   * @param {number} minuend The first number in a subtraction.
+   * @param {number} subtrahend The second number in a subtraction
+   * @returns Returns the difference
+   */
+  subtract(minuend, subtrahend) {
+    return minuend - subtrahend;
+  },
+  /**
+   * Computes the sum of the values in `array`.
+   * @param {array} array The array to iterate over.
+   * @returns Returns the sum
+   */
+  sum(array) {
+    return array.reduce((a, b) => a + b);
+  },
 };
 
 module.exports = _;
