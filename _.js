@@ -91,6 +91,19 @@ const _ = {
     });
     return max;
   },
+  // maxBy - TODO: implement the maxBy function
+  /**
+   * Computes the mean of the values in `array`.
+   * @param {array} array The array to iterate over
+   * @returns {number} Returns the mean.
+   */
+  mean(array) {
+    if (array.length === 0) {
+      return NaN;
+    }
+    return array.reduce((a, b) => a + b) / array.length;
+  },
+  //random TODO: implement random function
 };
-// TODO: random - implement random function
+
 module.exports = _;
