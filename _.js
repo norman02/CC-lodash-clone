@@ -2,37 +2,31 @@
  * create a `lodash` object`
  */
 const _ = {
+  /** Array Methods */
   /**
-   * Clamps a `number` within the inclusive `lower`
-   * and `upper` bounds
-   * @name clamp
-   * @param {number} number The `number` to clamp.
-   * @param {number} lower The `lower` bound.
-   * @param {number} upper The `upper` bound.
-   *
-   * @returns {number} returns the clamped `number`
+   * Creates on `array` elements split into group the lenght of `size`. If `array` can't be split evenly, the final chunk will be the remaining elements.
+   * @param {array} array The array to process.
+   * @param {number} size The lenght of each chunk
+   * @returns {array} Returns the new new array of chunks
    */
-  clamp(number, lower, upper) {
-    return Math.min(Math.max(number, lower), upper);
-  },
-  /**
-   * Checks if `number` is between `start` and up to, but not
-   * including `end`. if `end` is not specifed, it is set to
-   * `start` with `start` then set to 0. if `start` is greater
-   * than end the params are swapped to support negative ranges.
-   * @name inRange
-   * @param {number} number
-   * @param {number} start
-   * @param {number} end
-   * @returns {boolean} true if number in range
-   */
-  inRange(number, start, end) {
-    if (end === undefined) {
-      end = start;
-      start = 0;
+  chunk(array, size) {
+    const res = [];
+    for (let i = 0; i < array.length; i += size) {
+      const chunk = array.slice(i, i + size);
+      res.push(chunk);
     }
-    return number >= Math.min(start, end) && number < Math.max(start, end);
+    return res;
   },
+  /**
+   * Creates an array with all falsey values removed.
+   * @param {array} array The array to compact.
+   * @returns Returns the new array of filtered values
+   */
+  compact(array) {
+    return array.filter((e) => e);
+  },
+
+  /** Math methods */
   /**
    * Adds two numbers
    *
@@ -127,7 +121,6 @@ const _ = {
   multiply(multiplier, multiplicand) {
     return multiplier * multiplicand;
   },
-  //random TODO: implement random function
   //round TODO: implement the round function.
   /**
    * Subtract two numbers
@@ -146,6 +139,41 @@ const _ = {
   sum(array) {
     return array.reduce((a, b) => a + b);
   },
+  // sumBy TODO: implement sumBy method.
+
+  /** Number Methods */
+  /**
+   * Clamps a `number` within the inclusive `lower`
+   * and `upper` bounds
+   * @name clamp
+   * @param {number} number The `number` to clamp.
+   * @param {number} lower The `lower` bound.
+   * @param {number} upper The `upper` bound.
+   *
+   * @returns {number} returns the clamped `number`
+   */
+  clamp(number, lower, upper) {
+    return Math.min(Math.max(number, lower), upper);
+  },
+  /**
+   * Checks if `number` is between `start` and up to, but not
+   * including `end`. if `end` is not specifed, it is set to
+   * `start` with `start` then set to 0. if `start` is greater
+   * than end the params are swapped to support negative ranges.
+   * @name inRange
+   * @param {number} number
+   * @param {number} start
+   * @param {number} end
+   * @returns {boolean} true if number in range
+   */
+  inRange(number, start, end) {
+    if (end === undefined) {
+      end = start;
+      start = 0;
+    }
+    return number >= Math.min(start, end) && number < Math.max(start, end);
+  },
+  //random TODO: implement random function
 };
 
 module.exports = _;
