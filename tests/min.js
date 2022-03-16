@@ -1,14 +1,17 @@
 const assert = require("assert");
 const _ = require("../_");
 
-const mean = _.mean;
+const min = _.min;
 
-describe("mean", () => {
-  it("should compute the mean of an array", () => {
-    assert.strictEqual(mean([4, 2, 8, 6]), 5);
-    assert.strictEqual(mean([2, 2, 2, 2]), 2);
+describe("min", () => {
+  it("should return the minimum value", () => {
+    assert.strictEqual(min([4, 2, 8, 6]), 2);
+    assert.strictEqual(min([4, 8, 6]), 4);
   });
-  it("should return `NaN` when passing empty `array` values", () => {
-    assert.strictEqual(mean([]), NaN);
+  it("should work with non-numeric collections", () => {
+    assert.strictEqual(min(["a", "b"]), "a");
+  });
+  it("should return undefined for an empty array", () => {
+    assert.strictEqual(min([]), undefined);
   });
 });
