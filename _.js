@@ -5,15 +5,7 @@ const _ = {
   /** Array Methods */
   
   
-  /**
-   * Creates a new array concatenating `array` with any arrays and/or values.
-   * @param {array} array The array to concatenate.
-   * @param {...*} values The values to concatenate.
-   * @returns Returns the new concatenated array.
-   */
-  concat(array, values) {
-    return array.concat(); //FIXME: doesn't concat
-  },
+  
   // difference - TODO: implement difference function
   // differenceBy - TODO: Implement the differenceBy function.
 
