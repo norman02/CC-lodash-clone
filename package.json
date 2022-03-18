@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/norman02/CC-lodash-clone/issues"
   },
-  "homepage": "https://github.com/norman02/CC-lodash-clone#readme"
+  "homepage": "https://github.com/norman02/CC-lodash-clone#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

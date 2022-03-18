@@ -34,6 +34,19 @@ const _ = {
   concat(array, values) {
     return array.concat(); //FIXME: doesn't concat
   },
+  // difference - TODO: implement difference function
+  // differenceBy - TODO: Implement the differenceBy function.
+
+  /**
+   * Creates a slice of `array` from `start` up to, but not including, `end`.
+   * @param {array} array The array to slice.
+   * @param {number} start The start position.
+   * @param {number} end The end position.
+   * @returns {array} Teturns the slice of `array`.
+   */
+  slice(array, start, end) {
+    return array.slice(start, end);
+  },
 
   /** Math methods */
   /**
