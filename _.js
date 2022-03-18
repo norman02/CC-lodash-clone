@@ -49,17 +49,7 @@ const _ = {
   },
 
   /** Math methods */
-  /**
-   * Adds two numbers
-   *
-   * @param {number} augend the first number in the addition
-   * @param {number} addend the second number in the addition
-   *
-   * @returns {number} the sum of `augend` and `addend`
-   */
-  add(augend, addend) {
-    return augend + addend;
-  },
+  
   /**
    * Computes `number` rounded up to `precision`
    * @param {number} number the number to round up.
