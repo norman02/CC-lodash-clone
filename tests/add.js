@@ -1,15 +1,15 @@
 const assert = require("assert");
-const _ = require("../_");
+const add = require('../add')
 
-describe("add", () => {
-  it("should return the sum of two numbers", () => {
-    let result = _.add(6, 4);
-    let expected = 10;
-    assert.strictEqual(expected, result);
+describe('add', ()=> {
+  it('should add two numbers', ()=> {
+    assert.strictEqual(add(1, 2), 3);
+    assert.strictEqual(add(-1, 2), 1);
+    assert.strictEqual(add(-1, -2), -3);
   });
-  it("should work with negative numbers", () => {
-    let result = _.add(6, -4);
-    let expected = 2;
-    assert.strictEqual(expected, result);
+
+  it('should not coerce arguments to numbers', ()=> {
+    assert.strictEqual(add('1', '2'), '12');
+    assert.strictEqual(add('x', 'y'), 'xy');
   });
 });
