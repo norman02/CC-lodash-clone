@@ -1,7 +1,7 @@
 const assert = require("assert");
 const _ = require("../_");
 const lodash = require("lodash");
-const slice = _.slice;
+const slice = require("../slice");
 
 describe("slice", () => {
   const array = [1, 2, 3];

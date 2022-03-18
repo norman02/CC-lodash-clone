@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const floor = _.floor;
+const floor = require("../floor");
 
 describe("floor", () => {
   it("returns the number rounded down", () => {
@@ -9,3 +7,5 @@ describe("floor", () => {
     assert.strictEqual(floor(6.004), 6);
   });
 });
+
+// FIXME: precision not working

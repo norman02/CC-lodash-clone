@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const mean = _.mean;
+const mean = require("../mean");
 
 describe("mean", () => {
   it("should compute the mean of an array", () => {

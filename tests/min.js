@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const min = _.min;
+const min = require('../min')
 
 describe("min", () => {
   it("should return the minimum value", () => {
