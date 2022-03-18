@@ -53,20 +53,7 @@ const _ = {
   
   
  
-  /**
-   * Computes the maximum value of `array`. If `array` is empty or falsey, `undefined` is returned.
-   * @param {array} array The array to iterate over.
-   * @returns Returns the maximum value.
-   */
-  max(array) {
-    let max = array[0];
-    array.forEach((e) => {
-      if (e > max) {
-        max = e;
-      }
-    });
-    return max;
-  },
+ 
   // maxBy - TODO: implement the maxBy function
   /**
    * Computes the mean of the values in `array`.
