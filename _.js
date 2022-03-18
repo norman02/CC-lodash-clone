@@ -6,20 +6,7 @@ const _ = {
   
   
   
-  /**
-   * Computes the minimum value of `array`. If `array` is empty or falsey, `undefined` is returned.
-   * @param {array} array The array to iterate over.
-   * @returns Returns the minimum value.
-   */
-  min(array) {
-    let min = array[0];
-    array.forEach((e) => {
-      if (e < min) {
-        min = e;
-      }
-    });
-    return min;
-  },
+
   // minBy TODO: implement minBy function
   /**
    * Multiply two numbers.
