@@ -4,14 +4,7 @@
 const _ = {
   /** Array Methods */
   
-  /**
-   * Creates an array with all falsey values removed.
-   * @param {array} array The array to compact.
-   * @returns Returns the new array of filtered values
-   */
-  compact(array) {
-    return array.filter((e) => e);
-  },
+  
   /**
    * Creates a new array concatenating `array` with any arrays and/or values.
    * @param {array} array The array to concatenate.
