@@ -6,34 +6,6 @@ const _ = {
   
   
   
-  // difference - TODO: implement difference function
-  // differenceBy - TODO: Implement the differenceBy function.
-
-  /**
-   * Creates a slice of `array` from `start` up to, but not including, `end`.
-   * @param {array} array The array to slice.
-   * @param {number} start The start position.
-   * @param {number} end The end position.
-   * @returns {array} Teturns the slice of `array`.
-   */
-  slice(array, start, end) {
-    return array.slice(start, end);
-  },
-
-  /** Math methods */
- 
- 
-  /**
-   * Computes the mean of the values in `array`.
-   * @param {array} array The array to iterate over
-   * @returns {number} Returns the mean.
-   */
-  mean(array) {
-    if (array.length === 0) {
-      return NaN;
-    }
-    return array.reduce((a, b) => a + b) / array.length;
-  },
   /**
    * Computes the minimum value of `array`. If `array` is empty or falsey, `undefined` is returned.
    * @param {array} array The array to iterate over.
