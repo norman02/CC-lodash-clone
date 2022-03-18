@@ -52,16 +52,7 @@ const _ = {
   
   
   
-  /**
-   * Computes `number` rounded down to `precision`.
-   * @param {number} number The number to round down
-   * @param {number} precision The precision to round down to.
-   * @returns {number} Returns the ronded down number.
-   */
-  floor(number, precision) {
-    return Math.floor(number);
-    //TODO: implement precision
-  },
+ 
   /**
    * Computes the maximum value of `array`. If `array` is empty or falsey, `undefined` is returned.
    * @param {array} array The array to iterate over.
