@@ -3,20 +3,7 @@
  */
 const _ = {
   /** Array Methods */
-  /**
-   * Creates on `array` elements split into group the lenght of `size`. If `array` can't be split evenly, the final chunk will be the remaining elements.
-   * @param {array} array The array to process.
-   * @param {number} size The lenght of each chunk
-   * @returns {array} Returns the new new array of chunks
-   */
-  chunk(array, size) {
-    const res = [];
-    for (let i = 0; i < array.length; i += size) {
-      const chunk = array.slice(i, i + size);
-      res.push(chunk);
-    }
-    return res;
-  },
+  
   /**
    * Creates an array with all falsey values removed.
    * @param {array} array The array to compact.
@@ -49,12 +36,8 @@ const _ = {
   },
 
   /** Math methods */
-  
-  
-  
  
  
-  // maxBy - TODO: implement the maxBy function
   /**
    * Computes the mean of the values in `array`.
    * @param {array} array The array to iterate over
