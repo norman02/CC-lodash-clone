@@ -51,15 +51,7 @@ const _ = {
   /** Math methods */
   
   
-  /**
-   * Divide two numbers
-   * @param {number} dividend The first number in a division
-   * @param {number} divisor The second number in a division.
-   * @returns {number} Returns the quotient.
-   */
-  divide(dividend, divisor) {
-    return dividend / divisor;
-  },
+  
   /**
    * Computes `number` rounded down to `precision`.
    * @param {number} number The number to round down
