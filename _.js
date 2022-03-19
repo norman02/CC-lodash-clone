@@ -7,16 +7,7 @@ const _ = {
   
   
 
-  // minBy TODO: implement minBy function
-  /**
-   * Multiply two numbers.
-   * @param {number} multiplier The first number in a multiplication
-   * @param {number} multiplicand The second number in a multiplication.
-   * @returns Returns the product.
-   */
-  multiply(multiplier, multiplicand) {
-    return multiplier * multiplicand;
-  },
+  
   //round TODO: implement the round function.
   /**
    * Subtract two numbers
