@@ -4,14 +4,7 @@
 const _ = {
 
  
-  /**
-   * Computes the sum of the values in `array`.
-   * @param {array} array The array to iterate over.
-   * @returns Returns the sum
-   */
-  sum(array) {
-    return array.reduce((a, b) => a + b);
-  },
+  
   // sumBy TODO: implement sumBy method.
 
   /** Number Methods */
