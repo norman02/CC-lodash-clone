@@ -2,22 +2,8 @@
  * create a `lodash` object`
  */
 const _ = {
-  /** Array Methods */
-  
-  
-  
 
-  
-  //round TODO: implement the round function.
-  /**
-   * Subtract two numbers
-   * @param {number} minuend The first number in a subtraction.
-   * @param {number} subtrahend The second number in a subtraction
-   * @returns Returns the difference
-   */
-  subtract(minuend, subtrahend) {
-    return minuend - subtrahend;
-  },
+ 
   /**
    * Computes the sum of the values in `array`.
    * @param {array} array The array to iterate over.
