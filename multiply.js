@@ -1,3 +1,4 @@
+// minBy TODO: implement minBy function
 /**
  * Multiply two numbers.
  * @param {number} multiplier The first number in a multiplication
@@ -6,4 +7,4 @@
  */
 const multiply = (multiplier, multiplicand) => multiplier * multiplicand;
 
-module.exports = multiply
+module.exports = multiply;
