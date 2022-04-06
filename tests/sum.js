@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const sum = _.sum;
+const sum = require("../sum");
 
 describe("sum", () => {
   it("returns the sum of the numbers in array", () => {

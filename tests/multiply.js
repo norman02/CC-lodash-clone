@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const multiply = _.multiply;
+const multiply = require("../multiply")
 
 describe("multiply", () => {
   it("should return the product of two numbers", () => {
