@@ -1,7 +1,5 @@
 const assert = require("assert");
-const _ = require("../_");
-
-const subtract = _.subtract;
+const subtract = require("../subtract");
 
 describe("subtract", () => {
   it("should return the difference of two numbers", () => {
