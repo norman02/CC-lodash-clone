@@ -1,7 +1,7 @@
 const assert = require("assert");
 const chunk = require("../chunk");
 const lodashStable = require("lodash");
-const falsey = false; //FIXME
+const falsey = lodashStable.falsey; 
 
 describe("chunk", () => {
   it("returns a new array of chunks", () => {
