@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/norman02/CC-lodash-clone#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "lodash": "^4.17.21"
   }
 }
